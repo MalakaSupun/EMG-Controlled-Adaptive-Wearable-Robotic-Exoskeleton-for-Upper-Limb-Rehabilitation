@@ -1,6 +1,6 @@
 #
 <p align="center">
-    <img width="200" src=https://github.com/user-attachments/assets/eb8314b5-220a-4600-9fd4-f641f0e0f7ad alt="Logo">
+    <img width="350" src=https://github.com/user-attachments/assets/75aee0de-9bab-4de1-96c3-567c3d83e02d alt="Logo">
 </p>
 
 <h1 align="center">
@@ -25,3 +25,4 @@ Machine Learning Algorithms:
 ## 3. KNN - K-Neighbors Regressor:
 ## 4. SVR - Support Vector Regression:
 ## 5. RFR - Random Forest Regressor:
+
