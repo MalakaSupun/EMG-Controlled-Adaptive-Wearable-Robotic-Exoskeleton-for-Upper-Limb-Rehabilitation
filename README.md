@@ -7,3 +7,16 @@
   EMG Controlled Adaptive Wearable Robotic Exoskeleton for Upper Limb Rehabilitation AI
 </h1>
 
+## Results..
+I have used 5 AI models including 3 classical ML and 2 deep learning types.
+
+Deep Learning Algorithms:
+1. GRU - 
+2. LSTM - Long Short Term Memory 
+
+Machine Learning Algorithms:
+1. KNN - K-Neighbors Regressor
+2. SVR - Support Vector Regression
+3. RFR - Random Forest Regressor
+
+
