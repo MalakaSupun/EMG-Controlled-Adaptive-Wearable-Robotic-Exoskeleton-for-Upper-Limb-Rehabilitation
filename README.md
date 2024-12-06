@@ -26,3 +26,4 @@ Machine Learning Algorithms:
 ## 4. SVR - Support Vector Regression:
 ## 5. RFR - Random Forest Regressor:
 
+![1234](https://github.com/user-attachments/assets/b8bb6ed2-a853-43cf-883d-86835c2ba552)
