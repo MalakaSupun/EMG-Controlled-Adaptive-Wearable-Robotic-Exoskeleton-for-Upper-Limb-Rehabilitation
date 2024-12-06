@@ -8,13 +8,29 @@
 </h1>
 
 # Results..
-The methodology employed in this research focuses on leveraging advanced Deep Learning and Machine Learning techniques to achieve accurate predictions of the Range of Motion (ROM) angle. Specifically, the study integrates Gated Recurrent Units (GRUs) and Long Short-Term Memory (LSTM) networks as the core deep learning models. These architectures are chosen for their proven ability to capture temporal dependencies and handle sequential data effectively, making them particularly suitable for time-series prediction tasks like ROM angle estimation.  
-
-In addition to deep learning approaches, several machine learning algorithms have been utilized to complement the predictive analysis. These include the K-Nearest Neighbors (KNN) Regressor, Support Vector Regression (SVR), and Random Forest Regressor. Each of these models contributes unique strengths: KNN excels in capturing local patterns within the data, SVR provides robust predictions with its capacity to handle non-linear relationships, and Random Forest delivers strong performance through ensemble learning, reducing the risk of overfitting. 
-
-Given that the objective of this research is to predict a continuous variable the ROM angle the study employs regression-based artificial intelligence models. The integration of both deep learning and traditional machine learning algorithms ensures a comprehensive approach to the prediction task, combining the strengths of sequential modelling with feature-focused regressors to enhance overall accuracy and reliability.
-We have graded these algorithms according to the  First let’s discuss the machine learning algorithms. R2 Score, MSE and MAE results.
-
+<p align = "justify"> 
+The methodology applied in this research is targeted at making use of state-of-the-art Deep 
+Learning and Machine Learning techniques to enable accurate prediction of the Range of 
+Motion angle. Concretely, Gated Recurrent Units (GRUs) and Long Short-Term Memory 
+(LSTM) networks have been implemented as the core deep learning models. These 
+architectures are chosen for their proven ability to capture temporal dependencies and handle 
+sequential data effectively, making them particularly suitable for time-series prediction tasks 
+like ROM angle estimation. Besides deep learning approaches, several machine learning 
+algorithms have been utilized in complementing the predictive analysis.</p>  
+<p align = "justify">     
+It includes models such as K-Nearest Neighbors Regressor, Support Vector Regression, and 
+Random Forest Regressor. Each model offers specific benefits: KNN offers better capabilities 
+in the explanation of local patterns of data; SVR makes robust predictions owing to its ability 
+to deal with non-linear relationships, and Random Forest comes with strong performance via 
+ensemble learning to prevent overfitting. Since the goal of this study is to predict a continuous 
+variable, the ROM angle, regression-based artificial intelligence models are applied. Both deep 
+learning and traditional machine learning algorithms are combined in this study to ensure 
+comprehensiveness in the approach to prediction by combining strengths of sequential 
+modeling with feature-focused regressors for overall improved accuracy and reliability. We 
+have graded these algorithms according to the  First, let's discuss the results of the machine 
+learning algorithms. R2 Score, MSE and MAE results. 
+</p>
+    
 #
 
 ## 1. Support Vector Regression (SVR):
@@ -89,7 +105,9 @@ The Mean Absolute Error signifies that, on average, predictions are off by only 
 The Root Mean Squared Error of 2.49 quantifies the standard deviation of prediction errors, showing that predictions typically deviate by approximately 2.49 units from actual values. This further supports the model's robust performance and reliability.
 
 ## 3. K-Nearest Neighbours (KNN):
-The table presents the cross-validation performance metrics for the Random Forest Regressor (RFR) model across ten data splits. Key evaluation metrics include R² (coefficient of determination), MSE (Mean Squared Error), MAE (Mean Absolute Error), and RMSE (Root Mean Squared Error), providing a comprehensive view of the model's prediction capabilities. The table presents the cross-validation performance metrics for the K-Nearest Neighbours (KNN)model across ten data splits. Key evaluation metrics include R² (coefficient of determination), MSE (Mean Squared Error), MAE (Mean Absolute Error), and RMSE (Root Mean Squared Error), providing a comprehensive view of the model's prediction capabilities.
+<p align = "justify"> 
+The table presents the cross-validation performance metrics for the Random Forest Regressor (RFR) model across ten data splits. Key evaluation metrics include R² (coefficient of determination), MSE (Mean Squared Error), MAE (Mean Absolute Error), and RMSE (Root Mean Squared Error), providing a comprehensive view of the model's prediction capabilities. The table presents the cross-validation performance metrics for the K-Nearest Neighbours (KNN)model across ten data splits. Key evaluation metrics include R² (coefficient of determination), MSE (Mean Squared Error), MAE (Mean Absolute Error), and RMSE (Root Mean Squared Error), providing a comprehensive view of the model's prediction capabilities.</p>
+
 | Cross-Validation Split | R2 Score  | MSE       | MAE       | RMSE     |
 |:-----------------------:|-----------|-----------|-----------|----------|
 | 1                       | 0.693911  | 59.129093 | 4.430968  | 7.689544 |
@@ -103,7 +121,21 @@ The table presents the cross-validation performance metrics for the Random Fores
 | 9                       | 0.987118  | 2.003031  | 1.216768  | 1.415285 |
 | 10                      | 0.976144  | 3.263933  | 1.344803  | 1.806636 |
 | **Averages**            | 0.948014  | 7.760204  | 1.381786  | 2.006526 |
-
+<p align = "justify"> 
+The table displays the performance of the K-Nearest Neighbours (KNN) algorithm evaluated 
+through cross-validation across 10 splits. The performance, in terms of the R² score, ranges 
+between 0.6939 and 0.9947 with an average of 0.9480, which means that on average, the KNN 
+model explains about 94.8% of the variance within the target variable, implying strong 
+predictive power. The MSE values vary between a minimum of 0.6058 to a maximum of 
+59.1291, with an average of 7.7602. Although in most of the splits the MSE is very low, the 
+first split has a large error; that may indicate how well the model generalizes with respect to 
+variations in training data. The MAE ranges from 0.5589 to 4.4309, with an average of 1.3818, 
+which means that on average, the model's predictions deviate by about 1.38 units from the 
+actual values. The RMSE ranges from 0.7783 to 7.6895, with an average of 2.0065, which 
+means that on average, the KNN model's predictions deviate by about 2 units. Overall, the 
+KNN algorithm shows quite good predictive performance with an average R² indicating 
+reasonable model fit, though there is some fluctuation within the error metrics of splits. 
+</p>
 **Overall Metrics:**
 
 •	**Average R²: 0.948014**
