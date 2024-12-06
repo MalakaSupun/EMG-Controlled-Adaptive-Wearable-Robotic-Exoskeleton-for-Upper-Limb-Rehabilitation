@@ -109,12 +109,15 @@ The table presents the cross-validation performance metrics for the Random Fores
 •	**Average R²: 0.948014**
 
 The average R² of 0.948 suggests that the KNN model explains approximately 94.8% of the variance in the target variable. This indicates an excellent fit, and the model captures most of the underlying patterns in the data.
+
 •	**Average MSE: 7.760204**
 
 The Mean Squared Error (MSE) of 7.76 indicates that, on average, the squared difference between predicted and actual values is relatively low. Although the value is acceptable, there is potential for improvement, especially in reducing larger error values.
+
 •	**Average MAE: 1.381786**
 
 The Mean Absolute Error of 1.38 shows that, on average, the KNN model’s predictions deviate by approximately 1.38 units from the actual values. This is a good measure of prediction accuracy, indicating a relatively small error in the model's forecasts.
+
 •	**Average RMSE: 2.006526**
 
 The Root Mean Squared Error (RMSE) of 2.01 indicates that the predictions typically deviate by about 2 units from the actual values. This shows a strong performance, with the model providing reliable predictions with a manageable degree of error.
