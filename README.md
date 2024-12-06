@@ -1,6 +1,6 @@
 #
 <p align="center">
-    <img width="350" src=https://github.com/user-attachments/assets/b1ad6326-3a27-4a1d-8e48-99ea6690a7e4.png alt="Logo">
+    <img width="350" src=Image/Logo_01.png alt="Logo">
 </p>
 
 <h1 align="center">
@@ -26,4 +26,3 @@ Machine Learning Algorithms:
 ## 4. SVR - Support Vector Regression:
 ## 5. RFR - Random Forest Regressor:
 
-![1234](https://github.com/user-attachments/assets/b8bb6ed2-a853-43cf-883d-86835c2ba552)
