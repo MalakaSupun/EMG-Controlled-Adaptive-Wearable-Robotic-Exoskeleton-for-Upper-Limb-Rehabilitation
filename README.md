@@ -251,7 +251,7 @@ effective model, suitable for tackling real-world regression tasks.
 
 **Explanation of the MSE and MAE Graphs:**
 <p align="center">
-    <img width="1000" src='Image/GRU_01.png' alt="Logo">
+    <img width="1000" src='Image/GRU_01.png' alt="GRU">
 </p>
 
 **MSE Graph (Left Panel):**
@@ -295,7 +295,7 @@ predictions.
 **Explanation of the MSE and MAE Training Graphs:**
 
 <p align="center">
-    <img width="1000" src='Image/LSTM_01.png' alt="Logo">
+    <img width="1000" src='Image/LSTM_01.png' alt="LSTM">
 </p>
 
 **MSE Graph (Left Panel):**
