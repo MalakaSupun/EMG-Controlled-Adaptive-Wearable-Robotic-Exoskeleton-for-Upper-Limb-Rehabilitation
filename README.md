@@ -4,10 +4,10 @@
 </p>
 
 <h1 align="center">
-  EMG Controlled Adaptive Wearable Robotic Exoskeleton for Upper Limb Rehabilitation AI
+  EMG Controlled Adaptive Wearable Robotic Exoskeleton for Upper Limb Rehabilitation Using AI
 </h1>
 
-# Results..
+# 
 <p align = "justify"> 
 The methodology applied in this research is targeted at making use of state-of-the-art Deep 
 Learning and Machine Learning techniques to enable accurate prediction of the Range of 
@@ -16,25 +16,35 @@ Motion angle. Concretely, Gated Recurrent Units (GRUs) and Long Short-Term Memor
 architectures are chosen for their proven ability to capture temporal dependencies and handle 
 sequential data effectively, making them particularly suitable for time-series prediction tasks 
 like ROM angle estimation. Besides deep learning approaches, several machine learning 
-algorithms have been utilized in complementing the predictive analysis.</p>  
-<p align = "justify">     
-It includes models such as K-Nearest Neighbors Regressor, Support Vector Regression, and 
+algorithms have been utilized to complement the predictive analysis. It includes models such as K-Nearest Neighbors Regressor, Support Vector Regression, and 
 Random Forest Regressor. Each model offers specific benefits: KNN offers better capabilities 
 in the explanation of local patterns of data; SVR makes robust predictions owing to its ability 
 to deal with non-linear relationships, and Random Forest comes with strong performance via 
-ensemble learning to prevent overfitting. Since the goal of this study is to predict a continuous 
-variable, the ROM angle, regression-based artificial intelligence models are applied. Both deep 
+ensemble learning to prevent overfitting. 
+
+#    
+# Analysis of the Results 
+<p align = "justify"> 
+Since the goal of this study is to predict a continuous 
+variable, the ROM angle, and regression-based artificial intelligence models are applied. Both deep 
 learning and traditional machine learning algorithms are combined in this study to ensure 
-comprehensiveness in the approach to prediction by combining strengths of sequential 
-modeling with feature-focused regressors for overall improved accuracy and reliability. We 
-have graded these algorithms according to the  First, let's discuss the results of the machine 
-learning algorithms. R2 Score, MSE and MAE results. 
+comprehensiveness in the approach to the prediction by combining the strengths of sequential 
+modelling with feature-focused regressors for overall improved accuracy and reliability. We 
+have graded these algorithms according to the  R2 Score, MSE and MAE results of the machine 
+learning algorithms. 
 </p>
     
-#
+
 
 ## 1. Support Vector Regression (SVR):
-The results summarise the performance of the Support Vector Regression (SVR) model when predicting the target variable, based on metrics such as R² (coefficient of determination), MSE (Mean Squared Error), MAE (Mean Absolute Error), and RMSE (Root Mean Squared Error). These metrics were evaluated using a 10-fold cross-validation approach, where the dataset was split into ten subsets, and the model was trained and tested on different combinations of these subsets. Here's a detailed breakdown:
+<p align = "justify"> 
+The results summarize the performance of the Support Vector Regression model in the 
+prediction of the target variable, using metrics such as R², MSE, MAE, and RMSE. These 
+metrics have been evaluated using a 10-fold cross-validation approach, where the dataset was 
+split into ten subsets, and the model was trained and tested on different combinations of these 
+subsets. Here's a detailed breakdown: </p>
+<div align="center">
+    
 | Cross-Validation Split | R2 Score  | MSE       | MAE       | RMSE     |
 |:-----------------------:|-----------|-----------|-----------|----------|
 | 1                       | 0.656371  | 66.381072 | 6.840942  | 8.147458 |
@@ -48,27 +58,51 @@ The results summarise the performance of the Support Vector Regression (SVR) mod
 | 9                       | 0.914370  | 13.314672 | 3.272796  | 3.648928 |
 | 10                      | 0.902287  | 13.368730 | 3.374741  | 3.656327 |
 | **Averages**            | 0.803696  | 18.509195 | 3.389419  | 3.995176 |
-
-The cross-validation table summarises the performance of the Support Vector Regression (SVR) model across ten different data splits. Key metrics such as R² (coefficient of determination), MSE (Mean Squared Error), MAE (Mean Absolute Error), and RMSE (Root Mean Squared Error) are reported for each fold, providing insights into the model's accuracy and reliability. On average, the SVR model achieves an R² of 0.8037, indicating that it explains approximately 80% of the variance in the target variable, with an average MSE of 18.51 and an MAE of 3.39. However, the results vary significantly across folds, with R² scores ranging from 0.31 to 0.94 and MSE values fluctuating from 7.56 to 66.38. This variability highlights the sensitivity of the model to the data distribution in each fold, suggesting that while the model generally performs well, it may require further optimisation to achieve more consistent results. The best performance is observed in fold 4, which stands out with the lowest error metrics, offering a benchmark for improvement.
+</div>
+<p align = "justify">
+The cross-validation table summarizes the performance of the Support Vector Regression 
+model in ten different data splits. It provides, for each fold, key metrics such as R² (coefficient 
+of determination), MSE (Mean Squared Error), MAE (Mean Absolute Error), and RMSE (Root 
+Mean Squared Error), showing the accuracy and reliability of the model. The average R² value 
+of the SVR model is 0.8037, which means that, on average, it explains about 80% of the 
+variance in the target variable, with an average MSE of 18.51 and an MAE of 3.39. However, 
+the results over folds are very different, with some R² scores as low as 0.31 and as high as 0.94, 
+while the MSE values range from 7.56 to 66.38. It follows that the variability in the 
+performance also suggests sensitivity to the distribution of the data in each fold. Thus, while 
+the model in general performs well, further optimisation could help bring these performances 
+closer together. Indeed, the best performance happens to be in fold 4, which is outstanding by 
+its lowest error metrics value; hence, it can present a benchmark for improvement.
 
 **Overall Metrics:**
 
-•	**Average R²: 0.803696**
-This indicates that, on average, the SVR model explains approximately 80.37% of the variance in the target variable, suggesting a strong overall fit.
+•	**Average R²: 0.803696**<p align = "justify">
+This shows that the average SVR model explains around 80.37% of the variance in the 
+target variable and is a strong overall fit.
 
-•	**Average MSE: 18.509195**
-The average MSE measures the average squared differences between predicted and actual values, highlighting the overall error magnitude. A lower value is better, and while 18.51 is acceptable, there is room for improvement.
+•	**Average MSE: 18.509195**<p align = "justify">
+The average MSE simply provides a measure of the average of the squared differences 
+between predicted and actual values. This shows the magnitude of the overall error, where 
+lower values are better. While an MSE of 18.51 is acceptable, some scope for further 
+improvement remains.
 
-•	**Average MAE: 3.389419**
-This indicates that the average absolute difference between predicted and actual values is about 3.39 units. It is a straightforward measure of prediction accuracy.
+•	**Average MAE: 3.389419**<p align = "justify">
+This means that, on average, the difference between the predicted and actual values is 
+around 3.39 units. It is a simple measure of accuracy in prediction.
 
-•	**Average RMSE: 3.995176**
-The RMSE reflects the standard deviation of prediction errors and provides a clearer interpretation of prediction reliability. An RMSE of 3.99 means predictions typically deviate by approximately 4 units from actual values.
+•	**Average RMSE: 3.995176**<p align = "justify">
+The RMSE is the standard deviation of the prediction errors and gives a better interpretation 
+of the reliability of the prediction. An RMSE of 3.99 means the predictions are usually 
+about 4 units off from the actual values.
 
 
 ## 2. Random Forest Regressor (RFR):
-The table presents the cross-validation performance metrics for the Random Forest Regressor (RFR) model across ten data splits. Key evaluation metrics include R² (coefficient of determination), MSE (Mean Squared Error), MAE (Mean Absolute Error), and RMSE (Root Mean Squared Error), providing a comprehensive view of the model's prediction capabilities.
-
+<p align = "justify">
+The table shows the cross-validation performance of the RFR model for ten different data splits. 
+The main evaluation metrics include R², representing the coefficient of determination; MSE, 
+which is the Mean Squared Error; MAE, the Mean Absolute Error; and RMSE, the Root Mean 
+Squared Error, all of which give a full view of the model's predictability.
+<div align="center">
+    
 | Cross-Validation Split | R2 Score  | MSE       | MAE       | RMSE     |
 |:-----------------------:|-----------|-----------|-----------|----------|
 | 1                       | 0.823812  | 34.035417 | 4.658643  | 5.833988 |
@@ -82,32 +116,54 @@ The table presents the cross-validation performance metrics for the Random Fores
 | 9                       | 0.986421  | 1.053367  | 0.700370  | 1.026337 |
 | 10                      | 0.987504  | 2.166532  | 1.014344  | 1.471915 |
 | **Average**             | 0.901105  | 8.388585  | 1.847534  | 2.487754 |
-
-On average, the RFR model demonstrates strong performance, with an R² score of 0.9011, meaning it explains over 90% of the variance in the target variable. The average error metrics MSE at 8.39, MAE at 1.85, and RMSE at 2.49 further underline the model's accuracy and reliability. Performance across individual folds is consistent, with R² scores ranging from 0.698 to 0.991, showcasing a robust ability to generalise across data splits.
-The best performance is observed in folds 7 and 9, where the R² scores are above 0.986 and the error metrics are the lowest, particularly an MSE as low as 1.05 in fold 9. This indicates the model's exceptional accuracy in these cases. In contrast, fold 1 displays a relatively higher MSE of 34.03 and MAE of 4.66, showing that while the model generally performs well, there may be some sensitivity to the distribution of data in certain splits.
+</div>
+<p align = "justify">
+It turns out that the RFR model has a very strong overall performance, with an R² score of 
+0.9011, thereby explaining more than 90% of the variance in the target variable. The average 
+error metrics with an MSE at 8.39, MAE at 1.85, and RMSE at 2.49 provide further underlining 
+of its accuracy and reliability. It is also seen that performances across individual folds are 
+remarkably consistent, with R² values varying between 0.698 to 0.991, and showing a robust 
+ability to generalize across data splits. 
+The best performance is observed in folds 7 and 9, where the R² scores are above 0.986 and 
+the error metrics are the lowest, particularly an MSE as low as 1.05 in fold 9. This suggests the 
+model's exceptional accuracy in these cases. In contrast, fold 1 has a relatively higher MSE of 
+34.03 and MAE of 4.66, indicating that the model generally performs well but may be sensitive 
+to the distribution of data in certain splits.
 
 **Overall Metrics:**
 
 •	**Average R²: 0.901105**
-
-This indicates that the Random Forest Regressor (RFR) model explains approximately 90.11% of the variance in the target variable, demonstrating a very strong fit and reliable predictive capability. 
+<p align = "justify">
+This suggests that the model RFR explains about 90.11% of the variance in the target variable, 
+hence a very strong fit and reliable predictive capability. 
 
 •	**Average MSE: 8.388585**
-
-The Mean Squared Error of 8.39 reflects the average squared differences between predicted and actual values. This relatively low value indicates that the model maintains a high degree of accuracy, with minimal large deviations.
+<p align = "justify">
+The Mean Squared Error of 8.39 is representative of the average squared differences between 
+predicted and actual values. This relatively low value suggests that the model retains most of 
+the accuracy, hence not large deviations.
 
 •	**Average MAE: 1.847534**
-
-The Mean Absolute Error signifies that, on average, predictions are off by only 1.85 units. This low MAE highlights the model's ability to deliver highly precise predictions.
+<p align = "justify">
+The Mean Absolute Error means that, on average, predictions are off by just 1.85 units. This 
+low MAE showcases the model's capability for delivering highly accurate predictions.
 
 •	**Average RMSE: 2.487754**
-
-The Root Mean Squared Error of 2.49 quantifies the standard deviation of prediction errors, showing that predictions typically deviate by approximately 2.49 units from actual values. This further supports the model's robust performance and reliability.
+<p align = "justify">
+The Root Mean Squared Error of 2.49 measures the standard deviation of prediction errors, 
+indicating that normally, the predictions will vary by about 2.49 units from the true values. 
+This supports that the model has performed soundly and is reliable.
 
 ## 3. K-Nearest Neighbours (KNN):
 <p align = "justify"> 
-The table presents the cross-validation performance metrics for the Random Forest Regressor (RFR) model across ten data splits. Key evaluation metrics include R² (coefficient of determination), MSE (Mean Squared Error), MAE (Mean Absolute Error), and RMSE (Root Mean Squared Error), providing a comprehensive view of the model's prediction capabilities. The table presents the cross-validation performance metrics for the K-Nearest Neighbours (KNN)model across ten data splits. Key evaluation metrics include R² (coefficient of determination), MSE (Mean Squared Error), MAE (Mean Absolute Error), and RMSE (Root Mean Squared Error), providing a comprehensive view of the model's prediction capabilities.</p>
-
+The table depicts the cross-validation performance of the KNN model against ten data splits. 
+The evaluation metrics that have been used in the current analysis are the R², which is the 
+coefficient of determination; MSE, the Mean Squared Error; MAE, the Mean Absolute Error; and 
+RMSE, Root Mean Squared Error, showing a comprehensive view of the model's predictive 
+capabilities. The table depicts the cross-validation performance of the K-Nearest Neighbours 
+model against ten data splits.</p>
+<div align="center">
+    
 | Cross-Validation Split | R2 Score  | MSE       | MAE       | RMSE     |
 |:-----------------------:|-----------|-----------|-----------|----------|
 | 1                       | 0.693911  | 59.129093 | 4.430968  | 7.689544 |
@@ -121,14 +177,15 @@ The table presents the cross-validation performance metrics for the Random Fores
 | 9                       | 0.987118  | 2.003031  | 1.216768  | 1.415285 |
 | 10                      | 0.976144  | 3.263933  | 1.344803  | 1.806636 |
 | **Averages**            | 0.948014  | 7.760204  | 1.381786  | 2.006526 |
+</div>
 <p align = "justify"> 
 The table displays the performance of the K-Nearest Neighbours (KNN) algorithm evaluated 
 through cross-validation across 10 splits. The performance, in terms of the R² score, ranges 
 between 0.6939 and 0.9947 with an average of 0.9480, which means that on average, the KNN 
 model explains about 94.8% of the variance within the target variable, implying strong 
 predictive power. The MSE values vary between a minimum of 0.6058 to a maximum of 
-59.1291, with an average of 7.7602. Although in most of the splits the MSE is very low, the 
-first split has a large error; that may indicate how well the model generalizes with respect to 
+59.1291, with an average of 7.7602. Although in most of the splits, the MSE is very low, the 
+first split has a large error; that may indicate how well the model generalizes concerning 
 variations in training data. The MAE ranges from 0.5589 to 4.4309, with an average of 1.3818, 
 which means that on average, the model's predictions deviate by about 1.38 units from the 
 actual values. The RMSE ranges from 0.7783 to 7.6895, with an average of 2.0065, which 
@@ -136,65 +193,138 @@ means that on average, the KNN model's predictions deviate by about 2 units. Ove
 KNN algorithm shows quite good predictive performance with an average R² indicating 
 reasonable model fit, though there is some fluctuation within the error metrics of splits. 
 </p>
+
 **Overall Metrics:**
 
 •	**Average R²: 0.948014**
-
-The average R² of 0.948 suggests that the KNN model explains approximately 94.8% of the variance in the target variable. This indicates an excellent fit, and the model captures most of the underlying patterns in the data.
+<p align = "justify">
+The average R² value of 0.948 indicates that about 94.8% of the variance in the target variable 
+is explained by the KNN model. This is an excellent fit; the model captures most of the 
+underlying patterns in the data.
 
 •	**Average MSE: 7.760204**
-
-The Mean Squared Error (MSE) of 7.76 indicates that, on average, the squared difference between predicted and actual values is relatively low. Although the value is acceptable, there is potential for improvement, especially in reducing larger error values.
+<p align = "justify">
+he MSE value of 7.76 implies that, on average, the difference between the forecasted and 
+actual values are relatively small in a squared sense. Although this value is acceptable, it leaves 
+much room for further improvement to reduce especially larger error values.
 
 •	**Average MAE: 1.381786**
-
-The Mean Absolute Error of 1.38 shows that, on average, the KNN model’s predictions deviate by approximately 1.38 units from the actual values. This is a good measure of prediction accuracy, indicating a relatively small error in the model's forecasts.
+<p align = "justify">
+A Mean Absolute Error of 1.38 illustrates that the KNN model is generally off by 
+approximately 1.38 units. It is a good way of getting at the accuracy of this predictor since it 
+gives a great general interpretation - these values in forecasts for this model are close.
 
 •	**Average RMSE: 2.006526**
-
-The Root Mean Squared Error (RMSE) of 2.01 indicates that the predictions typically deviate by about 2 units from the actual values. This shows a strong performance, with the model providing reliable predictions with a manageable degree of error.
-
-LSTM and GRU are the deep learning models that were chosen.
+<p align = "justify">
+A root mean squared error of 2.01 would translate to the fact that this is the typical deviation 
+by a unit or two away from actual values, hence very strong and usually reliable in this way, 
+with a pretty reasonable degree of error. 
+The LSTM and GRU are deep learning models selected to do the best performance in the 
+time sequence prediction.
 
 ## 4. Gated Recurrent Units (GRU):
-The dataset was split into training and testing sets with a 90% to 10% ratio. Out of the total available data, 114 samples were allocated for training, while the remaining 13 samples were reserved for testing and validation. 
-
-This split ensures that the model is trained on a substantial portion of the data while still being evaluated on an independent set to gauge its generalization performance. 
-The model achieved an impressive R² score of 0.9796, indicating that 97.96% of the variance in the target variable was successfully explained by the model. Furthermore, the Mean Absolute Error (MAE) was recorded at 1.10, signifying that the average absolute difference between the predicted and actual values was only 1.10 units. The Mean Squared Error (MSE) of 1.94 highlights the squared differences' minimal magnitude, while the Root Mean Squared Error (RMSE) of 1.39 underscores the model’s strong predictive accuracy, as lower RMSE values indicate better performance. 
-These metrics demonstrate the model's robust learning ability and its potential to make highly reliable predictions, even when tested on unseen data. The low error values and high R² score are indicative of a well-tuned and effective model, suitable for tackling real-world regression tasks.
+<p align = "justify">
+The data was divided into 90% training and 10% test datasets. Based on this, out of the 
+available data, 114 samples were used for training, and the remaining 13 were used for testing 
+and validation. 
+<p align = "justify">
+This split ensures that the model is trained on a substantial portion of the data while still being 
+evaluated on an independent set to gauge its generalization performance. 
+This results in an excellent R² of 0.9796, where 97.96% of the variation in the target variable 
+has been correctly explained by this model. On top of this, its MAE reached 1.10, which 
+suggests that, on average, the difference between the real and the estimated value is no more 
+than 1.10 units. The Mean Squared Error of 1.94 shows the minimal magnitude of the squared 
+differences, while the RMSE of 1.39 points to the strong predictive accuracy of the model 
+since lower RMSE values indicate better performance. These metrics demonstrate the model's 
+robust learning ability and its potential to make highly reliable predictions, even when tested 
+on unseen data. The low error values and high R² score are indicative of a well-tuned and 
+effective model, suitable for tackling real-world regression tasks.
+<div align="center">
+    
 |Matrix |Score|
 |:-----:|:-------:|
 |R2 score| 0.97961025|
 |MAE | 1.104778|
 |MSE | 1.937539|
 |RMSE | 1.391955|
+</div>
 
 **Explanation of the MSE and MAE Graphs:**
-MSE Graph (Left Panel): The Mean Squared Error (MSE) graph illustrates the loss during the training and validation phases over 300 epochs. Initially, both the training and validation loss values are high, but they decrease rapidly as the model learns from the data. By around 50 epochs, the MSE values stabilize at very low levels, indicating effective learning and minimal overfitting. The closeness of the training and validation MSE curves demonstrates that the model generalizes well to unseen data.
+<p align="center">
+    <img width="1000" src='Image/GRU_01.png' alt="Logo">
+</p>
 
-**MAE Graph (Right Panel):** The Mean Absolute Error (MAE) graph similarly tracks the error reduction during training and validation. Both curves show a sharp decline in error during the initial epochs, eventually stabilizing at values close to zero. The smooth convergence of the training and validation MAE curves further confirms the model's robustness and its ability to handle temporal dependencies in the dataset effectively.
-These graphs highlight the GRU model’s strong learning capacity and the consistency between training and validation performance, reflecting the model’s reliability in making accurate predictions.
+**MSE Graph (Left Panel):**
+<p align = "justify">
+The MSE graph shows the loss of both training and validation 
+across 300 epochs. The training and validation loss starts off high but then rapidly decreases 
+as the model learns from the data. By around 50 epochs, the MSE values stabilize at very low 
+levels, indicating effective learning and minimal overfitting. The closeness of the training and 
+validation MSE curves means that the model generalizes well to unseen data.
+
+**MAE Graph (Right Panel):** 
+<p align = "justify">
+Similarly, the MAE graph shows the reduction of error in training 
+and validation. Both curves show a sharp decline in error during the initial epochs, eventually 
+stabilizing at values close to zero. The smooth convergence of the training and validation MAE 
+curves further confirms the model's robustness and its ability to handle temporal dependencies 
+in the dataset effectively. 
+These graphs highlight the GRU model’s strong learning capacity and the consistency between 
+training and validation performance, reflecting the model’s reliability in making accurate 
+predictions. 
 
 ## 5. Long Short-Term Memory (LSTM):
-
+<p align = "justify">
 The dataset was divided into a 90%-10% split, with 114 samples used for training and 13 samples for testing and validation.
-
-The Long Short-Term Memory (LSTM) algorithm exhibited exceptional performance, achieving an R² score of 0.9892, which indicates that 98.92% of the variance in the target variable was explained by the model. The Mean Absolute Error (MAE) was measured at 0.5823, and the Mean Squared Error (MSE) was 0.7019, reflecting the model's high accuracy. Furthermore, the Root Mean Squared Error (RMSE) was recorded as 0.8378, reinforcing the LSTM model's ability to make precise and reliable predictions.
+<p align = "justify">
+The LSTM algorithm performed extremely well, with an R² score of 0.9892, which indicates 
+that 98.92% of the variance in the target variable was explained by the model. The MAE was 
+0.5823, and the MSE was 0.7019, reflecting the high accuracy of the model. The RMSE was 
+0.8378, which again speaks to the LSTM model's ability to make precise and reliable 
+predictions. 
+<div align="center">
+                          
 |Matrix |Score|
 |:-----:|:-------:|
 |R2 score| 0.989230|
 |MAE     | 0.582275|
 |MSE     | 0.701869|
 |RMSE    | 0.837776|
+</div>
 
-**Explanation of the MSE and MAE Graphs:**
-**MSE Graph (Left Panel):** The MSE graph demonstrates the progression of the model’s loss over 300 epochs for both training and validation datasets. Initially, the MSE values are high due to the random initialization of weights, but they decrease rapidly as the model learns patterns from the data. By approximately 50 epochs, both training and validation loss stabilize at very low values. The validation curve closely follows the training curve, showing minimal overfitting and a strong generalization ability to unseen data.
+**Explanation of the MSE and MAE Training Graphs:**
 
-**MAE Graph (Right Panel):** The MAE graph also displays the reduction in error during training and validation. Similar to the MSE graph, the MAE values start high and decrease significantly during the initial epochs. Both training and validation MAE values converge smoothly, stabilizing at low levels by the 50th epoch. This indicates the model's capacity to make highly accurate predictions with minimal error.
-The graphs provide clear evidence of the LSTM model's excellent learning capability. The convergence of training and validation losses without significant divergence confirms the model's robustness, and the low final values of MSE and MAE highlight its high prediction accuracy.
+<p align="center">
+    <img width="1000" src='Image/LSTM_01.png' alt="Logo">
+</p>
+
+**MSE Graph (Left Panel):**
+<p align = "justify">
+The MSE graph illustrates how the model's loss evolved over 300 
+epochs on both training and validation datasets. At the start, the MSE values are very high 
+because the weights have been initialized randomly; these start to decrease rapidly as the model 
+starts learning patterns in the data. By about 50 epochs, the loss for both training and validation 
+stabilizes at very low values. The validation curve lies well with the training curve, indicating 
+no severe overfitting, which demonstrates excellent generalization performance for unseen 
+data. 
+
+**MAE Graph (Right Panel):** 
+<p align = "justify">
+The MAE graph also shows the decrease in error for training and 
+validation. Similar to the MSE graph, the MAE values start high and decrease significantly 
+during the initial epochs. Both training and validation MAE values converge smoothly, 
+stabilizing at low levels by the 50th epoch. This reflects the model's capability of making highly 
+accurate predictions with minimal error. 
+    <p align = "justify">
+The graphs really act as evidence for excellent learning capability by the LSTM model. The 
+convergence of training and validation losses without much divergence is proof of the 
+robustness of the model, while low final values of MSE and MAE show its high prediction 
+accuracy.
 
 ## Final Results Analysis 
 The performance of the different AI algorithms is evaluated based on their R², MAE, MSE, and RMSE scores. 
+<div align="center">
+    
 | AI Algorithm | R2 score  | MAE       | MSE       | RMSE     |
 |:------------:|-----------|-----------|-----------|----------|
 | SVR          | 0.803696  | 18.509195 | 3.389419  | 3.995176 |
@@ -202,6 +332,20 @@ The performance of the different AI algorithms is evaluated based on their R², 
 | KNN          | 0.948014  | 7.760204  | 1.381786  | 2.006526 |
 | GRU          | 0.979610  | 1.104778  | 1.937539  | 1.391955 |
 | LSTM         | 0.989230  | 0.582275  | 0.701869  | 0.837776 |
+</div>
+<p align = "justify">  
+The SVR comes with an R² score of 0.803696, explaining about 80.37% of the variance in the 
+target variable, with a mean MAE of 3.39 units and a mean MSE of 18.51. While the model 
+performance is pretty good, its predictions could be further improved. While the performance 
+of the SVR model is fair, the RFR does better with an R² score of 0.901105, showing that it 
+explains 90.11% of the variance in data. It also achieves a lower MAE of 1.85 and a much
+reduced MSE of 8.39, reflecting better prediction accuracy. The K-Nearest Neighbors model 
+further enhances the performance of the models with a very good R² of 0.948014, depicting 
+94.8% of the variance explained, and MAE and MSE of 1.38 and 7.76, respectively, showing 
+an excellent predictive ability of the model. The performance of both GRU and LSTM is the 
+best of all models, where the LSTM shows the highest value of R² as 0.989230, which explains 
+98.92% of the variance. The MAE of 0.58, MSE of 0.70, and RMSE of 0.84 indicate 
+a highly accurate prediction with relatively small errors. Overall, LSTM gave the best 
+performance, closely followed by GRU, then KNN, RFR, and lastly SVR. 
 
-Support Vector Regression (SVR) achieves an R² score of 0.803696, meaning it explains about 80.37% of the variance in the target variable, with an average MAE of 3.39 units and MSE of 18.51. While the model's predictions are fairly accurate, there is room for improvement. Random Forest Regressor (RFR), on the other hand, performs better with an R² score of 0.901105, indicating that it explains 90.11% of the variance in the data. It also achieves a lower MAE of 1.85 and a much-reduced MSE of 8.39, reflecting better prediction accuracy. The K-Nearest Neighbors (KNN) model further improves performance with an impressive R² score of 0.948014, demonstrating 94.8% of the variance explained, along with an MAE of 1.38 and an MSE of 7.76, showing excellent predictive ability. The GRU and LSTM models outperform all others, with LSTM achieving the highest R² of 0.989230, meaning it explains 98.92% of the variance. Its MAE of 0.58, MSE of 0.70, and RMSE of 0.84 indicate highly accurate predictions with minimal errors. Overall, LSTM stands out as the best-performing model, followed by GRU, KNN, RFR, and SVR.
-
+#
