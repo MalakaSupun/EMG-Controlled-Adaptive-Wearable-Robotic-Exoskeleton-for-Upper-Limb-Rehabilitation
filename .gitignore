@@ -3,6 +3,9 @@ Data_sets/Org_data.csv
 git_commands.txt
 config.json
 
+# Ignore word temp files....
+$*.docx
+
 # Ignore all files in this folders...
 Data_sets/
 Data_Docs/*.pdf
