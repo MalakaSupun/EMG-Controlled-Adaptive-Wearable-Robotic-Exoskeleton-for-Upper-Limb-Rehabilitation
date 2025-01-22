@@ -271,16 +271,17 @@ RMSE scores.
 
 <div align='justify'>
 
-The SVR comes with an R² score of 0.803696, explaining about 80.37% of the variance in the 
-target variable, with a mean MAE of 3.39 units and mean MSE of 18.51. While the model 
+The SVR comes with an R² score of 0.8724, explaining about 87.24% of the variance in the 
+target variable, with a mean MAE of 6.4534 units and mean MSE of 84.3302. While the model 
 performance is pretty good, its predictions could be further improved. While the performance 
-of the SVR model is fair, the RFR does better with an R² score of 0.901105, showing that it 
-explains 90.11% of the variance in data. It also achieves a lower MAE of 1.85 and a much
-reduced MSE of 8.39, reflecting better prediction accuracy. The K-Nearest Neighbors model 
-further enhances the performance of the models with a very good R² of 0.948014, depicting 
-94.8% of the variance explained, and MAE and MSE of 1.38 and 7.76, respectively, showing 
-an excellent predictive ability of the model. The performance of both GRU and LSTM is the 
-best of all models, where the LSTM shows the highest value of R² as 0.989230, which explains 
-98.92% of the variance. The MAE of 0.58, MSE of 0.70, and the RMSE of 0.84 for it indicates 
-a highly accurate prediction with relatively small errors. Overall, LSTM gave the best 
-performance, closely followed by GRU, then KNN, RFR, and lastly SVR.
+of the SVR model is fair, the RFR does better with an R² score of 0.8798, showing that it 
+explains 87.98% of the variance in data. It also achieves a lower MAE of 4.2081 and MSE of 
+73.68, reflecting better prediction accuracy.  
+The K-Nearest Neighbors model has the lowest performance of the models with a R² of 0.8334, 
+depicting 83.34% of the variance explained, and MAE and MSE of 5.87 and 97.4716, 
+respectively, showing an excellent predictive ability of the model.  
+The performance of CNN +  LSTM is the best of all models, where the model shows the highest 
+value of R² as 0.9640, which explains 96.40% of the variance. The MAE of 4.2081, MSE of 
+30.8670, and the RMSE of 5.5558 for it indicates a highly accurate prediction with relatively 
+small errors. Overall, CNN+LSTM gave the best performance, closely followed by RFR, then 
+SVR and lastly KNN.
