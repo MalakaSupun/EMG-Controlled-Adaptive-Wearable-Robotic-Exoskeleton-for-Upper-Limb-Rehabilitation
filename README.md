@@ -95,10 +95,10 @@ The main evaluation metrics include R², representing the coefficient of determi
 which is the Mean Squared Error; MAE, the Mean Absolute Error; and RMSE, the Root Mean 
 Squared Error, all of which give a full view of the model's predictability 
  
-Cross-Validation 
+
 <div align='center'>
 
-### Model Performance Metrics
+### Cross-Validation Model Performance Metrics
 
 | Split | R² Score   | MSE        | MAE       | RMSE      |
 |-------|------------|------------|-----------|-----------|
@@ -128,7 +128,7 @@ the model's exceptional accuracy in these cases. In contrast, fold 9 has a relat
 of 449.87 and MAE of 16.24, indicating that the model generally performs well but may be 
 sensitive to the distribution of data in certain splits. 
 
-###Overall Metrics: 
+### Overall Metrics: 
 - Average R²: 0.8799 
 This suggests that the model RFR explains about 87.99% of the variance in the target variable, 
 hence a very strong fit and reliable predictive capability.  
@@ -147,7 +147,7 @@ This supports that the model has performed sound and is reliable.
 ## 3. K-Nearest Neighbours (KNN): 
 The table depicts the cross-validation performance of the KNN model against ten data splits.The evaluation metrics that have been used in the current analysis are the R², which is the coefficient of determination; MSE, the Mean Squared Error; MAE, Mean Absolute Error; and RMSE, Root Mean Squared Error, showing a comprehensive view of the model's predictive capabilities. The table depicts the cross-validation performance of the K-Nearest Neighbours model against ten data splits.  
  
-### Model Cross-ValidationPerformance Metrics
+### Cross-Validation Model Performance Metrics
 
 <div align='center'>
 
