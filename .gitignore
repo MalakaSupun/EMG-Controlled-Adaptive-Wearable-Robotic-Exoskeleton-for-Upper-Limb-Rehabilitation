@@ -5,6 +5,7 @@ config.json
 
 # Ignore word temp files....
 ~*
+*.zip
 
 # Ignore all files in this folders...
 Data_sets/
