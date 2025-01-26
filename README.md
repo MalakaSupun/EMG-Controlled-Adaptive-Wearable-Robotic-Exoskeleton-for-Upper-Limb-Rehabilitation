@@ -224,6 +224,8 @@ This results in an excellent R² of 08941, where 89.41% of the variation in the 
 |MAE      | 7.0908   |
 |MSE      | 85.8826  |
 |RMSE     | 9.2673   |
+
+**Table 1 : GRU Performance Metrics**
 </div>
 
 ### Explanation of the MSE and MAE Graphs:
@@ -238,14 +240,17 @@ These graphs highlight the GRU model’s strong learning capacity and the consis
 ## 2. LSTM : 
 This results in an excellent R² of 0.9640, where 96.40% of the variation in the target variable has been correctly explained by this model. On top of this, its MAE reached 4.21, which suggests that, on average, the difference between the real and the estimated value is no more than 4.21 units. The Mean Squared Error of 30.87 shows the minimal magnitude of the squared differences, while the RMSE of 5.56 points to the strong predictive accuracy of the model, since lower RMSE values indicate better performance. These metrics demonstrate the model's robust learning ability and its potential to make highly reliable predictions, even when tested on unseen data. The low error values and high R² score are indicative of a well-tuned and effective model, suitable for tackling real-world regression tasks.
  
-<div align="center">
+<div align="center" class="blue">
 
 |Metrix|Value|
-|------|-----|
+|:------:|:-----:|
 |R2 Score:|  96.40% |
 |MAE:| 4.20805|  
 |MSE:| 30.86698 |
 |RMSE:| 5.55581 |
+
+**Table 2: LSTM Performance Metrics**
+
 </div>
 
 
@@ -289,6 +294,8 @@ RMSE scores.
 | RFR           | 0.8798   | 4.9498  | 73.6857  | 6.9244  |
 | GRU           | 0.8941   | 7.0908	 | 85.8826	| 9.2673  |
 | **LSTM**          | **0.9640**  | **4.2081**  | **30.8670**  | **5.5558**  |
+**Table 3: All Performance Metrics**
+
 </div>
 
 <div align='justify'>
