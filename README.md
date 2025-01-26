@@ -32,6 +32,8 @@ modeling with feature-focused regressors for overall improved accuracy and relia
 have graded these algorithms according to the  R2 Score, MSE and MAE results of the machine 
 learning algorithms. 
 
+# Machine Learning Algorithms:
+
 ## 1. Support Vector Regression (SVR): 
 <p align = "justify"> 
 The results summarize the performance of the Support Vector Regression model in the 
@@ -199,18 +201,42 @@ with a pretty reasonable degree of error.
 
 The LSTM and CNN are deep learning models selected in doing the best performance in the 
 time sequence prediction. 
-## 4. CNN + LSTM : 
-The data was divided into 70% training 15% validation and 15% test datasets. Based on this, 
-out of the available data, 98 samples were used for training, 21 for validation and the remaining 
-22 were used for testing .  
-70% 
-Training 
-15% 
-Validation 
-15% 
-Testing 
-This split ensures that the model is trained on a substantial portion of the data while still being 
-evaluated on an independent set to gauge its generalization performance. 
+
+# Deep Learning Algorithms:
+The LSTM and GRU are deep learning models selected in doing the best performance in the time sequence prediction.The data was divided into 70% training 15% validation and 15% test datasets. Based on this, out of the available data, 98 samples were used for training, 21 for validation and the remaining 22 were used for testing . 
+<div align="center">
+
+|*Training 70%*|*Validation 15%*|*Testing 15%*|
+|--------------|---|-------|
+
+</div>
+
+This split ensures that the model is trained on a substantial portion of the data while still being evaluated on an independent set to gauge its generalization performance
+
+## 1. GRU :
+This results in an excellent R² of 08941, where 89.41% of the variation in the target variable has been correctly explained by this model. On top of this, its MAE reached 1.10, which suggests that, on average, the difference between the real and the estimated value is no more than 1.10 units. The Mean Squared Error of 1.94 shows the minimal magnitude of the squared differences, while the RMSE of 1.39 points to the strong predictive accuracy of the model, since lower RMSE values indicate better performance. These metrics demonstrate the model's robust learning ability and its potential to make highly reliable predictions, even when tested on unseen data. The low error values and high R² score are indicative of a well-tuned and effective model, suitable for tackling real-world regression tasks.
+
+<div align="center">
+
+|Metrix   |Value     |
+|------   |----------|
+|R2 Score | 0.8941   |
+|MAE      | 7.0908   |
+|MSE      | 85.8826  |
+|RMSE     | 9.2673   |
+</div>
+
+### Explanation of the MSE and MAE Graphs:
+MSE Graph (Left Panel): The MSE graph shows the loss of both training and validation across 40 epochs. The training and validation loss starts off high but then rapidly decreases as the model learns from the data. By around 5 epochs, the MSE values stabilize at very low levels, indicating effective learning and minimal overfitting. The closeness of the training and validation MSE curves means that the model generalizes well to unseen data.
+MAE Graph (Right Panel): Similarly, the MAE graph shows the reduction of error in training and validation. Both curves show a sharp decline in error during the initial epochs, eventually stabilizing at values close to zero. The smooth convergence of the training and validation MAE curves further confirms the model's robustness and its ability to handle temporal dependencies in the dataset effectively.
+These graphs highlight the GRU model’s strong learning capacity and the consistency between training and validation performance, reflecting the model’s reliability in making accurate predictions.
+<p align="center">
+    <img width="1250" src='Docs/Version_02/Ref_Images/img_04.png' alt="Logo">
+</p>
+
+
+## 2. LSTM : 
+This results in an excellent R² of 0.9640, where 96.40% of the variation in the target variable has been correctly explained by this model. On top of this, its MAE reached 4.21, which suggests that, on average, the difference between the real and the estimated value is no more than 4.21 units. The Mean Squared Error of 30.87 shows the minimal magnitude of the squared differences, while the RMSE of 5.56 points to the strong predictive accuracy of the model, since lower RMSE values indicate better performance. These metrics demonstrate the model's robust learning ability and its potential to make highly reliable predictions, even when tested on unseen data. The low error values and high R² score are indicative of a well-tuned and effective model, suitable for tackling real-world regression tasks.
  
 <div align="center">
 
@@ -221,20 +247,15 @@ evaluated on an independent set to gauge its generalization performance.
 |MSE:| 30.86698 |
 |RMSE:| 5.55581 |
 </div>
-This results in an excellent R² of 0.9640, where 96.40% of the variation in the target variable 
-has been correctly explained by this model. On top of this, its MAE reached 4.21, which 
-suggests that, on average, the difference between the real and the estimated value is no more 
-than 4.21 units. The Mean Squared Error of 30.87 shows the minimal magnitude of the squared 
-differences, while the RMSE of 5.56 points to the strong predictive accuracy of the model, 
-since lower RMSE values indicate better performance. These metrics demonstrate the model's 
-robust learning ability and its potential to make highly reliable predictions, even when tested 
-on unseen data. The low error values and high R² score are indicative of a well-tuned and 
-effective model, suitable for tackling real-world regression tasks.
+
+
+
 <p align="center">
     <img width="750" src='Docs/Version_02/Ref_Images/img_02.png' alt="Logo">
 </p>
 
 ### Explanation of the MSE and MAE Graphs: 
+
 MSE Graph (Left Panel): The MSE graph shows the loss of both training and validation 
 across 100 epochs. The training and validation loss starts off high but then rapidly decreases 
 as the model learns from the data. By around 10 epochs, the MSE values stabilize at very low 
@@ -263,25 +284,13 @@ RMSE scores.
 
 | Algorithm     | R² Score | MAE     | MSE      | RMSE    |
 |---------------|----------|---------|----------|---------|
+| KNN           | 0.8334   | 5.8921  | 97.4716  | 8.0989  |
 | SVR           | 0.8724   | 6.4534  | 84.3302  | 8.0986  |
 | RFR           | 0.8798   | 4.9498  | 73.6857  | 6.9244  |
-| KNN           | 0.8334   | 5.8921  | 97.4716  | 8.0989  |
-| CNN + LSTM    | 0.9640   | 4.2081  | 30.8670  | 5.5558  |
+| GRU           | 0.8941   | 7.0908	 | 85.8826	| 9.2673  |
+| **LSTM**          | **0.9640**  | **4.2081**  | **30.8670**  | **5.5558**  |
 </div>
 
 <div align='justify'>
-
-The SVR comes with an R² score of 0.8724, explaining about 87.24% of the variance in the 
-target variable, with a mean MAE of 6.4534 units and mean MSE of 84.3302. While the model 
-performance is pretty good, its predictions could be further improved. While the performance 
-of the SVR model is fair, the RFR does better with an R² score of 0.8798, showing that it 
-explains 87.98% of the variance in data. It also achieves a lower MAE of 4.2081 and MSE of 
-73.68, reflecting better prediction accuracy.  
-The K-Nearest Neighbors model has the lowest performance of the models with a R² of 0.8334, 
-depicting 83.34% of the variance explained, and MAE and MSE of 5.87 and 97.4716, 
-respectively, showing an excellent predictive ability of the model.  
-The performance of CNN +  LSTM is the best of all models, where the model shows the highest 
-value of R² as 0.9640, which explains 96.40% of the variance. The MAE of 4.2081, MSE of 
-30.8670, and the RMSE of 5.5558 for it indicates a highly accurate prediction with relatively 
-small errors. Overall, CNN+LSTM gave the best performance, closely followed by RFR, then 
-SVR and lastly KNN.
+The SVR comes with an R² score of 0.8724, explaining about 87.24% of the variance in the target variable, with a mean MAE of 6.4534 units and mean MSE of 84.3302. While the model performance is pretty good, its predictions could be further improved. While the performance of the SVR model is fair, the RFR does better with an R² score of 0.8798, showing that it explains 87.98% of the variance in data. It also achieves a lower MAE of 4.2081 and MSE of 73.68, reflecting better prediction accuracy. The K-Nearest Neighbors model has the lowest  performance of the models with a R² of 0.8334, depicting 83.34% of the variance explained, and MAE and MSE of 5.87 and 97.4716, respectively, showing an excellent predictive ability of the model. 
+The GRU is showing a good R2 score of 0.8941 which is capable of explaining 89.41% of the variance in the target variable, with a mean MAE of 7.0908 units and mean MSE of 85.8826. The LSTM is the best of all models, where the model shows the highest value of R² as 0.9640, which explains 96.40% of the variance. The MAE of 4.2081, MSE of 30.8670, and the RMSE of 5.5558 indicate a highly accurate prediction with relatively small errors. Overall, LSTM gave the best performance, GRU is the second closely followed by RFR, then SVR and lastly KNN.
