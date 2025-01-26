@@ -1,6 +1,6 @@
 #
 <p align="center">
-    <img width="1250" src='Image/Logo_04.png' alt="Logo">
+    <img width="1250" src='Images/Logo_04.png' alt="Logo">
 </p>
 
 <h1 align="center">
@@ -227,14 +227,20 @@ This results in an excellent R² of 08941, where 89.41% of the variation in the 
 
 **Table 1 : GRU Performance Metrics**
 </div>
-
-### Explanation of the MSE and MAE Graphs:
-MSE Graph (Left Panel): The MSE graph shows the loss of both training and validation across 40 epochs. The training and validation loss starts off high but then rapidly decreases as the model learns from the data. By around 5 epochs, the MSE values stabilize at very low levels, indicating effective learning and minimal overfitting. The closeness of the training and validation MSE curves means that the model generalizes well to unseen data.
-MAE Graph (Right Panel): Similarly, the MAE graph shows the reduction of error in training and validation. Both curves show a sharp decline in error during the initial epochs, eventually stabilizing at values close to zero. The smooth convergence of the training and validation MAE curves further confirms the model's robustness and its ability to handle temporal dependencies in the dataset effectively.
-These graphs highlight the GRU model’s strong learning capacity and the consistency between training and validation performance, reflecting the model’s reliability in making accurate predictions.
 <p align="center">
     <img width="1250" src='Docs/Version_02/Ref_Images/img_04.png' alt="Logo">
 </p>
+
+### Explanation of the MSE and MAE Graphs:
+
+<p align="center">
+    <img width="1250" src='Docs/Version_02/Ref_Images/img_03.png' alt="Logo">
+</p>
+
+MSE Graph (Left Panel): The MSE graph shows the loss of both training and validation across 40 epochs. The training and validation loss starts off high but then rapidly decreases as the model learns from the data. By around 5 epochs, the MSE values stabilize at very low levels, indicating effective learning and minimal overfitting. The closeness of the training and validation MSE curves means that the model generalizes well to unseen data.
+MAE Graph (Right Panel): Similarly, the MAE graph shows the reduction of error in training and validation. Both curves show a sharp decline in error during the initial epochs, eventually stabilizing at values close to zero. The smooth convergence of the training and validation MAE curves further confirms the model's robustness and its ability to handle temporal dependencies in the dataset effectively.
+These graphs highlight the GRU model’s strong learning capacity and the consistency between training and validation performance, reflecting the model’s reliability in making accurate predictions.
+
 
 
 ## 2. LSTM : 
