@@ -231,7 +231,7 @@ robust learning ability and its potential to make highly reliable predictions, e
 on unseen data. The low error values and high R² score are indicative of a well-tuned and 
 effective model, suitable for tackling real-world regression tasks.
 <p align="center">
-    <img width="750" src='Docs/New_Docs/Ref_Images/img_02.png' alt="Logo">
+    <img width="750" src='Docs/Version_02/Ref_Images/img_02.png' alt="Logo">
 </p>
 
 ### Explanation of the MSE and MAE Graphs: 
@@ -242,7 +242,7 @@ levels, indicating effective learning and minimal overfitting. The closeness of 
 validation MSE curves means that the model generalizes well to unseen data.
 
 <p align="center">
-    <img width="1250" src='Docs/New_Docs/Ref_Images/img_01.png' alt="Logo">
+    <img width="1250" src='Docs/Version_02/Ref_Images/img_01.png' alt="Logo">
 </p>
 
 MAE Graph (Right Panel): Similarly, the MAE graph shows the reduction of error in training 
